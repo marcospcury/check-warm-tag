@@ -1,1 +1,1 @@
-(function(){var found=[...document.scripts].some(s=>s.src.includes('warmly.js'));alert(found?'🟢 Warmly.js is present!':'🔴 Warmly.js is NOT present.');})()
+<a href="javascript:(function()%7B(function()%7Bvar%20found%3D%5B...document.scripts%5D.some(s%3D%3Es.src.includes('warmly.js'))%3Balert(found%3F'%F0%9F%9F%A2%20Warmly.js%20is%20present!'%3A'%F0%9F%94%B4%20Warmly.js%20is%20NOT%20present.')%3B%7D)()%7D)()%3B">Drag and drop this link into you bookmarks bar</a>
