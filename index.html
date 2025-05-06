@@ -1,1 +1,3 @@
-<a href="javascript:(function()%7B(function()%7Bvar%20found%3D%5B...document.scripts%5D.some(s%3D%3Es.src.includes('warmly.js'))%3Balert(found%3F'%F0%9F%9F%A2%20Warmly.js%20is%20present!'%3A'%F0%9F%94%B4%20Warmly.js%20is%20NOT%20present.')%3B%7D)()%7D)()%3B">Drag and drop this link into you bookmarks bar</a>
+Drag and drop this link to your bookmark bar
+
+<a href="javascript:(function()%7Bjavascript%3A(function()%20%7B%0A%20%20%20%20const%20scripts%20%3D%20%5B...document.scripts%5D%3B%0A%20%20%20%20const%20found%20%3D%20scripts.some(s%20%3D%3E%20s.src.includes('warmly.js')%20%7C%7C%20s.id%20%3D%3D%3D%20'warmly-script-loader')%3B%0A%20%20%20%20alert(found%20%3F%20'%F0%9F%9F%A2%20Warmly.js%20is%20present!'%20%3A%20'%F0%9F%94%B4%20Warmly.js%20is%20NOT%20present.')%3B%0A%7D)()%3B%7D)()%3B">Check Warmly tag</a>
