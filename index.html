@@ -1,3 +1,37 @@
-Drag and drop this link to your bookmark bar
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warmly Tag Checker Bookmarklet</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background-color: #f9f9f9;
+    }
 
-<a href="javascript:(function()%7Bjavascript%3A(function()%20%7B%0A%20%20%20%20const%20scripts%20%3D%20%5B...document.scripts%5D%3B%0A%20%20%20%20const%20found%20%3D%20scripts.some(s%20%3D%3E%20s.src.includes('warmly.js')%20%7C%7C%20s.id%20%3D%3D%3D%20'warmly-script-loader')%3B%0A%20%20%20%20alert(found%20%3F%20'%F0%9F%9F%A2%20Warmly.js%20is%20present!'%20%3A%20'%F0%9F%94%B4%20Warmly.js%20is%20NOT%20present.')%3B%0A%7D)()%3B%7D)()%3B">Check Warmly tag</a>
+    h3 {
+      margin-bottom: 1em;
+    }
+
+    .warmly-check-button {
+      background-color: purple;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .warmly-check-button:hover {
+      background-color: rebeccapurple;
+    }
+  </style>
+</head>
+<body>
+  <h3>Drag and drop this link to your bookmark bar</h3>
+  <a class="warmly-check-button" href="javascript:(function()%7Bjavascript%3A(function()%20%7B%0A%20%20%20%20const%20scripts%20%3D%20%5B...document.scripts%5D%3B%0A%20%20%20%20const%20foundScript%20%3D%20scripts.find(s%20%3D%3E%20s.src.includes('warmly.js')%20%7C%7C%20s.id%20%3D%3D%3D%20'warmly-script-loader')%3B%0A%20%20%20%20if%20(foundScript)%20%7B%0A%20%20%20%20%20%20%20%20alert(`%F0%9F%9F%A2%20Warmly.js%20is%20present!%20(%F0%9F%93%A6%20Script%20URL%3A%20${foundScript.src})`)%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20alert('%F0%9F%94%B4%20Warmly.js%20is%20NOT%20present.')%3B%0A%20%20%20%20%7D%0A%7D)()%3B%7D)()%3B">Check Warmly tag</a>
+</body>
+</html>
